@@ -711,7 +711,7 @@ end)
 RegisterNetEvent('astro-pets:buyPet1')
 AddEventHandler('astro-pets:buyPet1',function()
 TriggerServerEvent('astro-pets:buyPet',Config.Pet1,Config.Pet1Price)
-QBCore.Functions.Notify('You Bought Cat.', 'sucess')
+QBCore.Functions.Notify('You Bought Cat.', 'success')
 
 end)
 RegisterNetEvent('astro-pets:buyPet2')
@@ -720,7 +720,7 @@ AddEventHandler('astro-pets:buyPet2',function()
     if PlayerData.job.name == "police" then
 
 TriggerServerEvent('astro-pets:buyPet',Config.Pet2,Config.Pet2Price)
-QBCore.Functions.Notify('You Bought K9 Dog.', 'sucess')
+QBCore.Functions.Notify('You Bought K9 Dog.', 'success')
     else
         QBCore.Functions.Notify('You are not police officer.', 'error')
     end
@@ -731,7 +731,7 @@ AddEventHandler('astro-pets:buyPet6',function()
     QBCore.Functions.GetPlayerData(function(PlayerData)
  if QBCore.Functions.HasItem('petlicense') or PlayerData.job.name == "police" then
 TriggerServerEvent('astro-pets:buyPet',Config.Pet6,Config.Pet6Price)
-QBCore.Functions.Notify('You Bought Dog.', 'sucess')
+QBCore.Functions.Notify('You Bought Dog.', 'success')
 else
     QBCore.Functions.Notify('You dont have the License.', 'error')
 end
